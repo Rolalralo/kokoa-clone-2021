@@ -1,0 +1,62 @@
+.nav{
+    /* 스크롤을 해도 움직이지 않게 해주는 position fixed */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* 패딩이 존재하면 기존 값보다 더 크게 만든다. */
+    background-color: #f9f9fa;
+    /* 마법의 한 줄 border-box */
+    /* padding에 상관없이 박스 사이즈가 커지지 않게 함
+        box 사이즈를 변경 X */
+    /* padding 이 뭔지 찾아보기! */
+    box-sizing: border-box;
+    padding: 20px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav__a{
+    color: black;
+    position: relative;
+
+}
+/* span에 관한 성질 */
+.nav__notify {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    /* position absolute는 가장 가까운 부모 기준으로 움직임
+        그래서 부모 인자에 position:relative를 선언해줘야함    
+    */
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    
+
+    
+}
+.nav__dot{
+    background-color: tomato;
+    display: block;
+    display: flex;
+    width: 6px;
+    height: 6px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 22px;
+    right: -10px;
+}
