@@ -43,7 +43,7 @@
 }
 
 
-
+/* last child 부분이 적용되지 않았으면 좋겠는 것이 있으면 다시 div에 감싼다 그렇게 되면 부모 자식의 관계가 아니라 부모 손자의 관계이기 때문에 옵션값이 적용되지 않는다. */
 .user-component__column:last-child{
     color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -51,7 +51,7 @@
     align-items: flex-end;
 
 }
-
+/* 클래스명이 길지만 그래도 한눈에 알아보기 쉽다. */
 .user-component__time{
     margin-bottom: 10px;
     display: block;

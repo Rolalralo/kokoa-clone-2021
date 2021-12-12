@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find</title>
+</head>
+<body>
+      <!-- 페이지에 공통으로 사용하는 요소들이 있으니까 이미 코딩한걸 다 가지고 온 다음에 삭제하는 식으로 코딩을 진핸한다. -->
+      <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-three-quarters fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+
+    </div>
+    <!-- Header 부분은 겹치니까 똑같이 사용하고 이름만 바꿔준다.
+         Span요소를 사용함으로써 편하게 사용할 수 있다.                                                -->
+    <header class="screen-header">
+        <!-- class의 강력함 클래스를 통해 반복되는 것들을 한 번의 코드 작성으로 계속해서 사용할 수 있다. -->
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span>
+                <i class="fas fa-search fa-lg "></i>
+            </span>
+            <span>
+                <span class="cog__dot"></span>
+                <i class="fas fa-cog fa-lg"></i>
+            </span>
+
+        </div>
+    </header>
+    <!-- 이 메인 스크린은 계속 사용할거다. 왜냐하면 전체 페이지에 패딩이 걸려있는데 CSS에 이 부분에 관한 패딩을 스타일 해놨기 때문에 계속해서 사용한다. -->
+    
+    <main class="main-screen">
+        <div class="find__icon">
+            <div class="find-icons__icon">
+                <i class="fas fa-qrcode fa-lg"></i>
+                <span>
+                    QR CODE
+                </span>
+        </div>
+            <div class="find-icons__icon">
+                <i class="far fa-address-book fa-lg"></i>
+                <span>
+                    Add by contact
+            </span>
+        </div>
+            <div class="find-icons__icon">
+                <i class="fas fa-fingerprint fa-lg"></i>
+                <span>
+                   Add By ID
+            </span>
+        </div>
+            <div class="find-icons__icon">
+                <i class="far fa-envelope fa-lg"></i>
+                <span>
+                Invite
+            </span>
+        </div>
+        </div>
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>You have no recommended friends</span>
+        </div>
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open chat</h4>
+                <span>Go to Openchat Home
+                    <i class="fas fa-chevron-right fa-xs"></i>
+
+                </span>                        
+
+            </div>
+        </div>
+        <div class="open-post">
+            <div class="open-post__column">
+                <h5 class="open-post__title">#bts</h5>
+                <h6 class="open-post__hashtag">#bts#army#freinds</h6>
+                <div class="open-post__members">
+                    <img src="http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/067/872/918/67872918_1616652768439_20_600x600.JPG" alt="">
+                    <span class="open-post__members-count">802 members</span>
+                    <div class="divider"></div>
+                    <span class="open-post__member-status">Active</span>
+                </div>
+            </div>
+            <div class="open-post__column">
+                <div class="open-post__photo">
+                    <img src="http://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/067/872/918/67872918_1616652768439_20_600x600.JPG" alt="">
+                    <div class="open-post__heart-count">
+                        <i class="fas fa-heart fa-xs"></i>
+                        <span>326</span>
+                    </div>
+                </div>
+                    
+                
+                
+                
+                <!-- <h5 class="open-post__title">#Bts Gang</h5>
+                <h6 class="open-post__hashtag">#englishonly#jimin</h6>
+                <div class="open-post__members">
+                    <img src="#" alt="">
+                    <span class="open-post__members-count">299 members</span>
+                    <div class="divider"></div>
+                    <span class="open-post__member-status">Active</span> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Nav 바 부분 코딩 이 부분은 모든 페이지에 사용이 되니까 계속 사용한다. 
+     코딩을 진행할 때 모든 부분에 사용되는 부분들을 먼저 코딩하는 것이 좋다. -->
+<nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__btn">
+            <a class="nav__a" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
+        <li class="nav__btn"> 
+            <a class="nav__a" href="chats.html">
+                <span class="nav__notify badge">1</span>
+                <i class="far fa-comments fa-2x"></i></a></li>
+        <li class="nav__btn">
+            <a class="nav__a" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+        <li class="nav__btn">
+            <a class="nav__a" href="more.html">
+                <span class="nav__dot"></span>
+                <i class="fas fa-ellipsis-h fa-2x"></i></a>
+        </li>
+    </ul>
+</nav>
+
+    <script src="https://kit.fontawesome.com/5bd8a584c3.js" crossorigin="anonymous">
+    </script>
+    
+</body>
+</html>

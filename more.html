@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chats</title>
+    <title>More</title>
 </head>
 <body>
-    <div class="status-bar">
+      <!-- 페이지에 공통으로 사용하는 요소들이 있으니까 이미 코딩한걸 다 가지고 온 다음에 삭제하는 식으로 코딩을 진핸한다. -->
+      <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
             <i class="fas fa-wifi"></i>
@@ -23,45 +24,46 @@
         </div>
 
     </div>
-    
+    <!-- Header 부분은 겹치니까 똑같이 사용하고 이름만 바꿔준다.
+         Span요소를 사용함으로써 편하게 사용할 수 있다.                                                -->
     <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
+        <!-- class의 강력함 클래스를 통해 반복되는 것들을 한 번의 코드 작성으로 계속해서 사용할 수 있다. -->
+        <h1 class="screen-header__title">More</h1>
         <div class="screen-header__icons">
             <span>
                 <i class="fas fa-search fa-lg "></i>
             </span>
             <span>
-                <i class="far fa-comment-dots fa-lg"></i>
+            <i class="fas fa-music fa-lg"></i>
             </span>
             <span>
-                <i class="fas fa-music fa-lg"></i>
-            </span>
+                <span class="cog__dot"></span>
                 <i class="fas fa-cog fa-lg"></i>
-            <span>
-
             </span>
+
         </div>
     </header>
-    
-    <main class="main-screen">
+    <!-- 이 메인 스크린은 계속 사용할거다. 왜냐하면 전체 페이지에 패딩이 걸려있는데 CSS에 이 부분에 관한 패딩을 스타일 해놨기 때문에 계속해서 사용한다. -->
+    <main class="main-screen more-screen"> 
         <div class="user-component">
             <div class="user-component__column">
                 <img 
-                src="http://file2.nocutnews.co.kr/newsroom/image/2019/03/10/20190310051039937361_0_777_1165.jpg" 
+                src="https://dimg.donga.com/wps/NEWS/IMAGE/2021/01/17/104953245.2.jpg" 
                 class="user-component__avatar user-component__avatar" /> 
                 <div class="user-component__text">
-                    <h4 class="user-component__title">modu</h4>
-                    <h6 class="user-component__subtitle">Please check My kakaotalk Account Info</h6>
+                    <h4 class="user-component__title">IU</h4>
+                    <h6 class="user-component__subtitle">+ 010 4058 0448</h6>
+                </div>
+                <div class="user-component__column">
+                    <i class="far fa-comment-alt fa-2x"></i>
                 </div>
             </div>
-            <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <div class="badge">1</div>
-            </div>
-        </div>
         </div>
     </main>
     
+
+    <!-- Nav 바 부분 코딩 이 부분은 모든 페이지에 사용이 되니까 계속 사용한다. 
+     코딩을 진행할 때 모든 부분에 사용되는 부분들을 먼저 코딩하는 것이 좋다. -->
 <nav class="nav">
     <ul class="nav__list">
         <li class="nav__btn">
@@ -69,7 +71,7 @@
         <li class="nav__btn"> 
             <a class="nav__a" href="chats.html">
                 <span class="nav__notify badge">1</span>
-                <i class="fas fa-comments fa-2x"></i></a></li>
+                <i class="far fa-comments fa-2x"></i></a></li>
         <li class="nav__btn">
             <a class="nav__a" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
         <li class="nav__btn">
